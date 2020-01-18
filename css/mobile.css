@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/* header */
+header{
+    height: 44px;
+    background: #b5121b;
+    border-bottom: 0;
+}
+header h1:last-of-type{
+    display: block;
+    text-align: center;
+}
+header h1:first-of-type{
+    display: none;
+}
+header h1 a{
+    line-height: 40px;
+    height: 44px;
+    display: block;
+
+}
+header h1 a img{
+    width: 150px;
+}
+header .btn-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+header .btn-menu img{
+    width: 39px;
+    height: 44px;
+}
+
+
+/* gnb */
+header .left, header .right{
+    display: none;
+}
+header .gnb{
+    position: relative;
+    z-index: 11;
+    margin-top: 0;
+    padding: 10px 0;
+    background: #424242;
+    display: none;
+}
+header .gnb > ul > li{
+    float: none;
+    height: 100%;
+    text-align: left;
+    line-height: 35px;
+}
+header .gnb > ul > li > a{
+    font-size: 13px;
+    padding-top: 0;
+    padding-left: 10px;
+    color: #fff;
+    font-weight: 400;
+}
+header .gnb > ul > li > span{
+    display: none;
+}
+
+
+/* main slide */
+.main-slide{
+    padding-bottom: 25px;
+}
+.main-slide img:first-child{
+    display: none;
+}
+.main-slide img:last-child{
+    display: block;
+    width: 100%;
+}
+.main-slide .swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: -5px;
+}
+
+
+/* 컨텐츠영역 첫번째 줄 */
+.first-row-tab, .first-row{
+    display: none;
+}
+.first-row-mo{
+    display: block;
+}
+.first-row-mo > .top{
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.first-row-mo > .top a{
+    display: block;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.first-row-mo > .top a:first-child{
+    padding: 0 5px 0 10px;
+}
+.first-row-mo > .top a:last-child{
+    padding: 0 10px 0 5px;
+}
+.first-row-mo > .top a img{
+    width: 100%;
+    vertical-align: top;
+}
+.first-row-mo > .bottom{
+    padding: 0 10px;
+}
+.first-row-mo > .bottom > span{
+    font-size: 15px;
+    font-weight: 900;
+    color: #b5121b;
+}
+.first-row-mo > .bottom > p{
+    font-size: 13px;
+}
+.first-row-mo > .bottom ul{
+    margin-top: 25px;
+}
+.first-row-mo > .bottom ul li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background: url(../img/bar.gif) 0 top no-repeat;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+}
+.first-row-mo > .bottom ul li:first-child{
+    background: none;
+}
+.first-row-mo > .bottom ul li a img{
+    width: 86px;
+}
+.first-row-mo > .bottom ul li a span{
+    display: block;
+    font-size: 12px;
+    color: #303030;
+}
+.first-row-mo > .bottom ul li a span:hover{
+    color: #b5121b;
+}
+
+
+/* 컨텐츠영역 두번째 줄 */
+.second-row .membership, .second-row .gift-card{
+    float: none;
+}
+.second-row div a img{
+    width: 100%;
+}
+
+
+/* 컨텐츠영역 세번째 줄 */
+.third-row{
+    margin-top: 30px;
+    padding: 0 30px;
+}
+.third-row div{
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 30px;
+}
+.third-row .etc{
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+.third-row .news ul li a {
+    width: 80%;
+}
+.third-row .academy a, .b2b a{
+    color: #ba0005;
+    font-weight: bold;
+}
+
+
+/* sns 영역 */
+.sns {
+    padding: 25px 0 30px 0;
+    margin-top: 30px;
+}
+.sns h2{
+    display: block;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.sns .sns-icon{
+    margin: 5px 0 0 10px;
+}
+.sns .sns-contents li{
+    width: 50%;
+}
+.sns .sns-contents img{
+    vertical-align: top;
+}
+
+
+/* footer 영역 */
+footer{
+    height: 100%;
+    padding: 50px 30px;
+    background: #f7f7f7;
+}
+footer .etc-nav li a{
+    color: #808080;
+}
+footer address{
+    color: #808080;
+}

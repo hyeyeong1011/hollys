@@ -1,0 +1,336 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+/* reset, common */
+*{margin: 0;padding: 0;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none; color: #000;}
+button{border:none; background: none; cursor: pointer; outline: none;}
+ul{list-style: none;}
+.center{position: relative; max-width: 940px; margin:0 auto;}
+.blind{position: absolute; left:-9999px; width: 0; overflow: hidden;}
+.clearfix{zoom: 1;}
+.clearfix::before, .clearfix::after{display: block; content: ''; line-height: 0;}
+.clearfix::after{clear: both;}
+
+
+/* header */
+header{
+    height: 148px;
+    border-bottom: 2px solid #b5121b;
+    box-sizing: border-box;
+}
+header h1:last-of-type, header .btn-menu{
+    display: none;
+}
+header > div{
+    position: relative;
+}
+header > div h1:first-of-type{
+    width: 133px;
+    margin: 0 auto;
+}
+header > div h1:first-of-type img{
+    padding-top: 17px;
+    vertical-align: top;
+}
+header .left{
+    position: absolute;
+    float: left;
+    top: 17px;
+}
+header .right{
+    position: absolute;
+    float: right;
+    top: 17px;
+    right: 0;
+}
+header .right ul li, header .left ul li{
+    margin-left: 12px;
+    line-height: 11px;
+}
+header .right ul li:first-child, header .left ul li:first-child{
+    margin-left: 0;
+}
+header .left li, header .right li{
+    float: left;
+}
+header .left ul li a{
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+}
+header .left ul li:first-child a{
+    color: #b5121b;
+}
+header .right ul li a{
+    color: #6f6f6f;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* gnb */
+header .gnb{
+    margin-top: 9px;
+}
+header .gnb > ul > li{
+    float: left;
+    width: 156px;
+    height: 60px;
+    text-align: center;
+}
+header .gnb > ul > li.on{
+    background: #ba000c;
+}
+header .gnb > ul > li.on > span, header .gnb > ul > li.on > a{
+    color: #fff;
+}
+header .gnb > ul > li > a{
+    display: block;
+    font-size: 17px;
+    font-weight: 800;
+    padding-top: 10px;
+}
+header .gnb > ul > li > span{
+    color: #6f6f6f;
+    font-size: 12px;
+    display: block;
+    opacity: 0;
+    transition: 0.3s;
+}
+header .gnb > ul > li > ul{
+    position: relative;
+    z-index: 9999;
+    padding-top: 17px;
+    display: none;
+}
+header .gnb > ul > li > ul > li{
+    line-height: 25px;
+}
+header .gnb > ul > li > ul > li:hover a{
+    color: #fff;
+}
+header .gnb > ul > li > ul > li > a{
+    color: #808080;
+    font-size: 13px;
+}
+header .depth2-bg{
+    background: #4f4c4b;
+    width: 100%;
+    height: 279px;
+    position: absolute;
+    top: 146px;
+    z-index: 999;
+    display: none;
+} 
+
+
+
+/* main slide */
+.main-slide{
+    padding-bottom: 45px;
+}
+.main-slide img:last-child{
+    display: none;
+}
+.main-slide .swiper-container .swiper-slide-active img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: #e1e1e0;
+    opacity: 1;
+}
+.swiper-pagination-bullet:hover,.swiper-pagination-bullet-active{
+    background: #a42228;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 5px 14px;
+}
+
+
+
+/* 컨텐츠영역 첫번째 줄 */
+.first-row-tab, .first-row-mo{
+    display: none;
+}
+.first-row > div{
+    float: left;
+}
+.first-row > .middle{
+    position: relative;
+    width: 450px;
+    margin-left: 10px;
+}
+.first-row > .middle > span{
+    position: absolute;
+    left: 19px;
+    top: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #b5121b;
+}
+.first-row > .middle > p{
+    font-size: 14px;
+    margin: 60px 0 0 19px;
+}
+.first-row > .middle ul{
+    margin-top: 55px;
+}
+.first-row > .middle ul li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background: url(../img/bar.gif) 0 top no-repeat;
+    padding: 10px 26px 0;
+    box-sizing: border-box;
+}
+.first-row > .middle ul li:first-child{
+    background: none;
+}
+.first-row > .middle ul li a img{
+    width: 86px;
+}
+.first-row > .middle ul li a span{
+    display: block;
+    font-size: 12px;
+    color: #303030;
+}
+.first-row > .middle ul li a span:hover{
+    color: #b5121b;
+}
+
+
+
+/* 컨텐츠영역 두번째 줄 */
+.second-row{
+    margin-top: 40px;
+}
+.second-row .membership{
+    float: left;
+}
+.second-row .gift-card{
+    float: right;
+}
+
+
+
+/* 컨텐츠영역 세번째 줄 */
+.third-row{
+    margin-top: 30px;
+}
+.third-row > div{
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+    box-sizing: border-box;
+    color: #6f6f6f;
+}
+.third-row .academy dl dt, .b2b dl dt{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.third-row .academy dl dd, .b2b dl dd{
+    font-size: 12px;
+}
+.third-row .academy a, .b2b a{
+    font-size: 12px;
+}
+.third-row .news h2{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.third-row .news ul li{
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.third-row .news ul li a{
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 160px;
+    color: #6f6f6f;
+}
+.third-row .news ul li span{
+    float: right;
+}
+.third-row .etc{
+    padding-right: 0;
+}
+.third-row .etc ul{
+    overflow: hidden;
+}
+.third-row .etc ul li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background: url(../img/bar.gif) right top no-repeat;
+    padding: 15px 5px 15px 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.third-row .etc ul li:last-child{
+    background: none;
+}
+.third-row .etc ul li span:last-child{
+    display: block;
+    font-size: 12px;
+}
+
+
+/* sns 영역 */
+.sns{
+    padding: 40px 0 80px 0;
+    margin-top: 50px;
+    border-top: 2px solid #b5121b;
+}
+.sns h2{
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 20px;
+}
+.sns .sns-icon{
+    display: inline-block;
+}
+.sns .sns-contents{
+    overflow: hidden;
+    margin-top: 30px;
+}
+.sns .sns-contents li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.sns .sns-contents li a img{
+    width: 100%;
+}
+
+
+/* footer 영역 */
+footer{
+    height: 115px;
+    background: #ba000c;
+    padding-top: 30px;
+    font-size: 12px;
+}
+footer .etc-nav{
+    overflow: hidden;
+}
+footer .etc-nav li{
+    float: left;
+}
+footer .etc-nav li a{
+    color: #faeff0;
+    padding-left: 3px;
+}
+footer address{
+    font-style: normal;
+    color: #de898e;
+    margin-top: 20px;
+}
